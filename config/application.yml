@@ -1,0 +1,12 @@
+---
+smtp_enable_starttls_auto: ""
+smtp_user_name: ""
+smtp_password: ""
+smtp_address: ""
+smtp_domain: ""
+smtp_authentication: ""
+smtp_port: ""
+action_mailer_url_host: ""
+action_mailer_url_port: ""
+
+github_webhook_secret: "bf2d5238ecd02766e30a00234b5c62391f2d9402f28e9a752aca602883eba1d9c9be703fc8e9b8d798c2566c4587f31a63756b0829c5c9a4c27922e44f2ac85c"
