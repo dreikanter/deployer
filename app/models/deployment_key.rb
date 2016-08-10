@@ -1,0 +1,2 @@
+class DeploymentKey < ApplicationRecord
+end

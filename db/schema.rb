@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160808195155) do
+ActiveRecord::Schema.define(version: 20160810123230) do
 
   create_table "delayed_jobs", force: :cascade do |t|
     t.integer  "priority",   default: 0, null: false
@@ -25,6 +25,15 @@ ActiveRecord::Schema.define(version: 20160808195155) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.index ["priority", "run_at"], name: "delayed_jobs_priority"
+  end
+
+  create_table "deployment_keys", force: :cascade do |t|
+    t.string   "encrypted_private", null: false
+    t.string   "public",            null: false
+    t.string   "iv",                null: false
+    t.string   "name",              null: false
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
 
 end
