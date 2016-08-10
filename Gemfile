@@ -43,12 +43,20 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'pry-rails', '~> 0.3.4'
+  gem 'rails_db', '~> 1.3', '>= 1.3.3'
+end
+
+group :test do
+  gem 'database_cleaner', '~> 1.5', '>= 1.5.3'
+  gem 'factory_girl_rails', '~> 4.0'
+  gem 'guard-minitest', require: false
+  gem 'minitest-rails'
+  gem 'minitest-reporters'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'delayed_job_active_record', '~> 4.1', '>= 4.1.1'
-gem 'rails_db', '~> 1.3', '>= 1.3.3'
 gem 'lograge', '~> 0.3.6'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
