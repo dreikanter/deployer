@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 20160810123230) do
     t.string   "public",            null: false
     t.string   "iv",                null: false
     t.string   "name",              null: false
+    t.string   "cipher_algorithm",  null: false
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
   end

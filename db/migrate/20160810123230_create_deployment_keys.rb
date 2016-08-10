@@ -5,6 +5,7 @@ class CreateDeploymentKeys < ActiveRecord::Migration[5.0]
       t.string :public, null: false
       t.string :iv, null: false
       t.string :name, null: false
+      t.string :cipher_algorithm, null: false
 
       t.timestamps
     end
