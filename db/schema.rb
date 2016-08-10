@@ -28,13 +28,13 @@ ActiveRecord::Schema.define(version: 20160810123230) do
   end
 
   create_table "deployment_keys", force: :cascade do |t|
-    t.string   "encrypted_private", null: false
-    t.string   "public",            null: false
-    t.string   "iv",                null: false
-    t.string   "name",              null: false
-    t.string   "cipher_algorithm",  null: false
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
+    t.string   "encrypted_private",              null: false
+    t.string   "public",                         null: false
+    t.string   "iv",                             null: false
+    t.string   "name",              default: "", null: false
+    t.string   "cipher_algorithm",               null: false
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
   end
 
 end
