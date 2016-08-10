@@ -1,0 +1,5 @@
+<% if @operation.form.errors.any? %>
+  alert('<%= @operation.form.errors.full_messages.join("\n") %>');
+<% else %>
+  Turbolinks.visit(location.toString());
+<% end %>

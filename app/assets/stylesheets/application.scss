@@ -12,6 +12,12 @@
   white-space: nowrap;
 }
 
+$width-medium: 30px;
+
 .page-title {
-  margin-bottom: 30px;
+  margin-bottom: $width-medium;
+}
+
+.deployment-key-form {
+  margin-bottom: $width-medium;
 }

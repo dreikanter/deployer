@@ -4,7 +4,7 @@ class DeploymentKeysController < ApplicationController
   end
 
   def create
-    @deployment_key = Operations::DeploymentKey::Create.call(params)
+    @operation = Operations::DeploymentKey::Create.call(params)
   end
 
   def edit

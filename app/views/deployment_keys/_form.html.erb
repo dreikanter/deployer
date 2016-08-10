@@ -1,0 +1,6 @@
+<%= form_for @operation.form, url: deployment_keys_path(format: :js), method: :post, remote: true, html: { class: 'form form-inline deployment-key-form' } do |f| %>
+  <div class="form-group">
+    <%= f.text_field :name, placeholder: 'New key name (optional)', maxlength: Const::Limits::DEPLOYMENT_KEY_NAME_MAX, class: 'form-control' %>
+  </div>
+  <%= f.submit 'Create new key', class: 'btn btn-default' %>
+<% end %>
