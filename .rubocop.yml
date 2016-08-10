@@ -16,3 +16,6 @@ Style/FrozenStringLiteralComment:
 
 Style/AlignParameters:
   Enabled: false
+
+Style/Encoding:
+  Enabled: false
