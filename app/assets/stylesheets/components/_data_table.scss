@@ -2,6 +2,11 @@
   $question-icon: "\f128";
   $data-table-cell-padding: 6px;
 
+  &.table-bordered > thead > tr > th,
+  &.table-bordered > thead > tr > td {
+    border-bottom-width: 1px;
+  }
+
   thead,
   tbody,
   tfoot {

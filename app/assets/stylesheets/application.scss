@@ -6,4 +6,12 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "bootstrap/variables";
-@import "components/data_table"
+@import "components/data_table";
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.page-title {
+  margin-bottom: 30px;
+}
