@@ -61,3 +61,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'delayed_job_active_record', '~> 4.1', '>= 4.1.1'
 gem 'lograge', '~> 0.3.6'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
+gem 'jquery-ui-rails', '~> 5.0', '>= 5.0.5'
