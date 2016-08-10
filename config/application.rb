@@ -10,7 +10,7 @@ module Deployer
   class Application < Rails::Application
     config.autoload_paths += %w(app lib).map { |p| Rails.root.join p }
 
-    config.active_job.queue_adapter = :sidekiq
+    config.active_job.queue_adapter = :delayed_job
 
     def smtp_enable_starttls_auto
       ENV['smtp_enable_starttls_auto'].to_s.casecmp('true').zero?
