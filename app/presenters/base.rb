@@ -22,5 +22,29 @@ module Presenters
     def not_implemented!
       throw NotImplementedError
     end
+
+    def self.actions?
+      const_defined?('ACTIONS')
+    end
+
+    def self.columns?
+      const_defined?('COLUMNS')
+    end
+
+    def self.record?
+      const_defined?('RECORD')
+    end
+
+    def self.actions
+      actions? && self::ACTIONS || []
+    end
+
+    def self.columns
+      columns? && self::COLUMNS || []
+    end
+
+    def self.record
+      record? && self::RECORD || []
+    end
   end
 end

@@ -28,13 +28,12 @@ module Presenters
       },
       {
         title: 'name',
-        value: -> (r) { r.name },
-        classes: ''
+        value: -> (r) { r.name }
       },
       {
         title: 'created_at',
         value: -> (r) { r.created_at },
-        classes: 'min-width'
+        classes: 'min-width nowrap'
       }
     ].freeze
 

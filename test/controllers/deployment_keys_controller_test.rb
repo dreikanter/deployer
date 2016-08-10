@@ -6,7 +6,8 @@
 #  encrypted_private :string           not null
 #  public            :string           not null
 #  iv                :string           not null
-#  name              :string           not null
+#  name              :string           default(""), not null
+#  cipher_algorithm  :string           not null
 #  created_at        :datetime         not null
 #  updated_at        :datetime         not null
 #

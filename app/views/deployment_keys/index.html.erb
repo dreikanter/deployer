@@ -1,3 +1,5 @@
-<h1>Deployment Keys</h1>
+<h1 class="page-title">Deployment Keys</h1>
 
-<%= build :data_table, records: @deployment_keys %>
+<%= render partial: 'form', locals: { form: @operation.form } %>
+
+<%= build :data_table, records: @operation.records %>
