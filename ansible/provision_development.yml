@@ -1,0 +1,5 @@
+---
+- name: provision all servers
+  hosts: all
+  become: yes
+  roles: []
